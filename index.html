@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"
+      integrity="sha512-Kr+RPfLjQ71E0cJ9nseJ6jwTrnmMnuSPnnsVQQ/ZYYCjOHKfJcWj8ILICXnvf9A7ZQChNzIbr9x/ZAxA6xAZlQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="toggle" onclick="toggleMenu();">
+        <i id="un-active" class="fas fa-bars"></i>
+        <i id="active" class="fas fa-times"></i>
+    </div>
+
+    <section class="banner" id="home">
+        <div class="imgSidebar">
+            <img src="https://www.thecoderschool.com/blog/wp-content/uploads/2019/01/Modern-Computer-programming-Code-942607124_2122x1416.jpeg" alt="">
+        </div>
+        <div class="contentBx">
+            <h5 class="logoText">My_Portfolio</h5>
+            <div>
+                <h4><span>Hello</span>, I'm</h4>
+                <div class="name">
+                    <h2>T</h2>
+                    <h2>e</h2>
+                    <h2>m</h2>
+                    <h2>u</h2>
+                    <h2>u</h2>
+                    <h2>j</h2>
+                    <h2>i</h2>
+                    <h2>n</h2>
+                </div>
+                <h4>I'm a Front End Web Developer.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eum dolore ab reiciendis dignissimos voluptatum qui eligendi dicta obcaecati, corrupti deserunt iusto. Quis delectus tempore nulla quo illum ex mollitia!</p>
+                <a href="#about">About Me</a>
+                <div class="link">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="title">
+                <h1 id="sr-top">About Me</h1>
+            </div>
+            <div id="sr-top" class="space"></div>
+            <div class="content">
+                <p class="sr-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, officiis porro corporis sapiente minima aperiam dolorem illo a suscipit quam iste quibusdam inventore? Temporibus eius labore quaerat officiis! Amet, magnam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia nobis quos praesentium quam nihil accusantium cupiditate aperiam quisquam vel placeat magni libero doloribus sed temporibus, perferendis voluptatem fugiat veritatis voluptatibus! Lorem ipsum, dolor sit amet consectetur adipisicing elit.<span> Tenetur ipsa facilis vero dolorem non eos vel aliquam praesentium, atque suscipit, maiores quasi aut. Neque nulla, dolorum modi eos nihil nesciunt!
+                <br>
+                <br>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat quaerat corporis dolorem ab fuga mollitia ex laudantium nulla voluptatum ea temporibus, sequi rerum quam officia sunt, est impedit vel a! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde debitis iste optio quas. Repellat nulla maxime iure non voluptas eos eum temporibus illo excepturi, officia cum odit impedit sunt dicta.</span>
+                </p>
+
+                <img class="sr-right" src="https://media.nature.com/lw800/magazine-assets/d41586-019-00653-5/d41586-019-00653-5_16459152.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="title">
+                <h1 id="sr-top">Contact Me</h1>
+                <div id="sr-top" class="space"></div>
+                <p id="sr-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum quas corporis accusantium, iste debitis enim similique id aliquid nemo impedit cumque cum, repudiandae temporibus distinctio veniam magnam fugit officia!</p>
+            </div>
+            
+            <div class="content">
+                <input class="f-name sr-left" type="text" name="" placeholder="First Name">
+                <input class="l-name sr-right" type="text" name="" placeholder="Last Name">
+                <input class="email sr-left" type="text" name="" placeholder="E-mail">
+                <input class="number sr-right" type="text" name="" placeholder="Phone Number">
+                <input id="sr-bot" class="message" type="message" name="" placeholder="Message">
+            </div>
+
+            <div class="btn">
+                <a id="sr-bot" href="">Send</a>
+            </div>
+
+            <div class="footer">
+                <p id="sr-bot">Copyright © 2021 Online Tutorials. All Right Reserved</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            const sidebar = document.querySelector('.sidebar');
+            menuToggle.classList.toggle('active');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+
+    <script src="./script.js"></script>
+</body>
+</html>
